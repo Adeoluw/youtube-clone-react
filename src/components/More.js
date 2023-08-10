@@ -4,7 +4,7 @@ export default function More(props) {
     return (
       <>
         <div className="nav-link">
-          {/* <i class="fa-solid fa-house fa-xl" style="color: #000000"></i> */}
+          {props.icon}
           <p>{props.name}</p>
         </div>
       </>

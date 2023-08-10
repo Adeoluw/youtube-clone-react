@@ -24,17 +24,17 @@ export default function Side() {
 
   // Mapping the data for the subscribtions of the side section
   const subscrbtions = subs.map((item) => {
-    return <Subscrbtion key = {item.id} channelName={item.channelName} />;
+    return <Subscrbtion key = {item.id} icon ={item.subIcon} channelName={item.channelName} />;
   });
 
   // Mapping the data for the trending section of the side section
   const trend = trending.map((item) => {
-    return <Trending key={item.id} head={item.head} />;
+    return <Trending key={item.id} icon = {item.icon} head={item.head} />;
   });
 
   // Mapping the data for the trending section of the side section
     const moreYoutube = moreyoutubedata.map(item => {
-        return <More key={item.id} name= {item.name} />
+      return <More key={item.id} name={item.name} icon={item.icon} />
     })
 
   return (

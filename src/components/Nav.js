@@ -23,7 +23,7 @@ export default function Nav() {
             <form action="">
               <input type="text" placeholder="Search..." />
               <button className="search-button">
-              <FaSearch className="icons search" />
+              <FaSearch className="icons search-icon" />
               </button>
             </form>
           </div> 
@@ -34,7 +34,7 @@ export default function Nav() {
         <div className="account-details">
           <FaViadeoSquare />
           {/* <i className="fa-regular fa-bell fa-xl" style="color: #000000"></i> */}
-          <div className="account-icon"><p>A</p></div>
+          <div className="account-icon">A</div>
         </div>
       </div>
         </nav>

@@ -1,21 +1,24 @@
+import React from "react";
+import { FaHome, FaVideo, FaList} from "react-icons/fa";
+
 const sectionOne = [
   {
     id: 1,
-    icon: "",
+    icon: <FaHome />,
     head: "Home",
   },
 
   {
     id: 2,
-    icon: "",
+    icon: <FaVideo />,
     head: "Shorts",
   },
 
   {
     id: 3,
-    icon: "",
+    icon: <FaList />,
     head: "Subscriptions",
-  }
+  },
 ];
 
 export default sectionOne

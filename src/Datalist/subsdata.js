@@ -1,57 +1,59 @@
+import { FaYoutube } from "react-icons/fa"
+
 const subs = [
     
     {
 
         id: 1,
-        subIcon: "",
+        subIcon: <FaYoutube className="youtube-icon" />,
         channelName: "Sub one",
     },
 
     {
         id: 2,
-        subIcon: "",
+        subIcon: <FaYoutube className="youtube-icon" />,
         channelName: "Sub two",
     },
 
     {
         id: 3,
-        subIcon: "",
+        subIcon: <FaYoutube className="youtube-icon" />,
         channelName: "Sub three",
     },
 
     {
         id: 4,
-        subIcon: "",
+        subIcon: <FaYoutube className="youtube-icon" />,
         channelName: "Sub four",
     },
 
     {
         id: 5,
-        subIcon: "",
+        subIcon: <FaYoutube className="youtube-icon" />,
         channelName: "Sub five",
     },
 
     {
         id: 6,
-        subIcon: "",
+        subIcon: <FaYoutube className="youtube-icon" />,
         channelName: "Sub six",
     },
 
     {
         id: 7,
-        subIcon: "",
+        subIcon: <FaYoutube className="youtube-icon" />,
         channelName: "Sub seven",
     },
 
     {
         id: 8,
-        subIcon: "",
+        subIcon: <FaYoutube className="youtube-icon" />,
         channelName: "Sub eight",
     },
 
     {
         id: 9,
-        subIcon: "",
+        subIcon: <FaYoutube className="youtube-icon" />,
         channelName: "Sub nine",
     },
 

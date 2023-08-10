@@ -1,28 +1,35 @@
- const trending = [
+import { FaMusic, FaGamepad, FaNewspaper, FaFootballBall, FaChartLine } from "react-icons/fa"
+
+const trending = [
 
     {
-        id : 1,
-        head : "Trending"
+        id: 1,
+        head : "Trending",
+        icon: <FaChartLine/> ,
     },
 
     {
         id : 2,
-        head : "Music"
+        head : "Music",
+        icon: <FaMusic/> ,
     },
 
     {
         id : 3,
-        head : "Gaming"
+        head : "Gaming",
+        icon: <FaGamepad/> ,
     },
 
     {
         id : 4,
-        head : "News"
+        head : "News",
+        icon: <FaNewspaper/> ,
     },
 
     {
         id : 5,
-        head : "Sport"
+        head : "Sport",
+        icon: <FaFootballBall/> ,
     },
 
 ]

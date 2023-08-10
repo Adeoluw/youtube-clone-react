@@ -1,38 +1,39 @@
-const sectionTwo = [
+import { FaHistory, FaLaptop, FaFileVideo, FaTimesCircle, FaThumbsUp, FaClipboard } from "react-icons/fa";
 
+const sectionTwo = [
   {
     id: 1,
-    icon: "",
+    icon: <FaLaptop />,
     head: "Library",
   },
 
   {
     id: 2,
-    icon: "",
+    icon: <FaHistory />,
     head: "History",
   },
 
   {
-    id:3,
-    icon: "",
+    id: 3,
+    icon: <FaFileVideo />,
     head: "Your Videos",
   },
 
   {
-    id:4,
-    icon: "",
+    id: 4,
+    icon: <FaTimesCircle />,
     head: "Watch Later",
   },
 
   {
     id: 5,
-    icon: "",
+    icon: <FaClipboard />,
     head: "Your clips",
   },
 
   {
     id: 6,
-    icon: "",
+    icon: <FaThumbsUp />,
     head: "Liked videos",
   },
 
