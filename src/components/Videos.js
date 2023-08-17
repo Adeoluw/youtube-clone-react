@@ -4,15 +4,22 @@ const Videos = (props) => {
   console.log(props.url)
   return (
     <div className="video-con">
-      <video
+      <video src={props.url} controls poster={props.thumbnail}></video>
+      {/* <iframe
+        title="YouTube Video"
+        width="560" // Adjust width and height as needed
+        height="315"
         src={props.url}
-        controls
-        poster={props.thumbnail}
-      ></video>
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe> */}
       <div className="video-details">
         <div className="channel-img"></div>
         <div className="video-text">
-          <h3>{props.title}</h3>
+          <div className='text-title'>
+            <h3>{props.title}</h3>
+          </div>
           <p>
             The Modern Show <span className="verified"></span>
           </p>

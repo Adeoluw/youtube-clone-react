@@ -34,11 +34,11 @@ export default function Side() {
 
   // Mapping the data for the trending section of the side section
     const moreYoutube = moreyoutubedata.map(item => {
-      return <More key={item.id} name={item.name} icon={item.icon} />
+      return <More key={item.id} name={item.name} icon={item.icon}/>
     })
 
   return (
-    <div>
+    <div className="side-section-con">
       <section>{firstSection}</section>
       <hr />
       <section>{secondSection}</section>

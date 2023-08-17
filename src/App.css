@@ -9,7 +9,7 @@
 
 body{
   padding: 0px;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 body i{
@@ -208,16 +208,20 @@ nav{
 }
 
 .side-section{
-  height: 100vh;
   border: 1px solid none;
   width: 15%;
-  overflow-y: scroll;
+  overflow-y: auto;
   padding-bottom: 100px;
   min-width: 150px;
 }
 
+.side-section-con{
+  position: sticky;
+}
+
 main{
   display: flex;
+  height: 100vh;
 }
 
 
@@ -225,17 +229,22 @@ main{
    display: flex;
     flex-wrap: wrap;
     padding-block: 20px;
-    column-gap: 30px;
+    column-gap: 15px;
     justify-content: center;
-    row-gap: 75px;
-    overflow-y: scroll;
+    row-gap: 23px;
+    overflow-y: auto;
     width: 100%;
     padding-inline: 20px;
-    height: 100vh;
+    /* height: 100vh; */
+}
+
+.videos:hover::-webkit-scrollbar-thumb{
+  background: grey;
+    border-radius: 5px;
 }
 
 .video-con{
-  width: 30%;
+  width: 358px;
   padding-block: 0;
 }
 
@@ -249,21 +258,31 @@ main{
 .video-details {
   display: flex;
   cursor: pointer;
+  width: 100%;
   /* border: 1px solid black; */
   padding-inline: 0;
   align-items: flex-start;
 }
 
 .video-text{
-      font-size: 15px;
-      text-wrap: wrap;
-     margin-left: 20px;
+      font-size: 12px;
+      word-wrap: wrap;
+      margin-left: 14px;
       text-align: left;
+      width: 80%;
+}
+
+.text-title{
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
 }
 
 .video-text p{
   padding: 0;
   gap: 0;
+      min-width: 200px;
   margin-block: 0;
 }
 
@@ -273,14 +292,15 @@ main{
   }
 
 .channel-img {
-      width: 80px;
+      width: 35px;
       border: 1px solid black;
       height: 35px;
       border-radius: 50%;
       background-image: url(data:image/png;base64,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);
       background-size: contain;
       background-repeat: no-repeat;
-      background-position: center
+      background-position: center;
+      min-width: 35px;
 }
 
 .sub-img {
@@ -323,4 +343,25 @@ main{
 
 .youtube-icon{
   color: red;
+}
+
+@media only screen and (max-width:1340px) {
+ 
+  .video-con{
+    width: 320px;
+  }
+}
+
+@media only screen and (max-width:1210px) {
+ 
+  .video-con{
+    width: 218px;
+  }
+}
+
+@media only screen and (max-width:910px) {
+ 
+  .video-con{
+    width: 175px;
+  }
 }
