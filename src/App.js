@@ -11,14 +11,6 @@ function App() {
 // create state for the video urls
   const [getVideos, setGetVideos] = React.useState([])
 
-  //  React.useEffect(() => {
-  //    fetch("https://developers.google.com/youtube/v3/docs/videos/list#request")
-  //      .then((res) => res.json())
-  //      .then((data) => setGetVideos(data));
-  //  }, []);
-  
-  // console.log(getVideos)
-
   React.useEffect(() => {
     // Replace with your YouTube Data API key
     const apiKey = "AIzaSyAAVAJOvPQgGMYfF4v43Z-8vdFYbihFMaI";

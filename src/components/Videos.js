@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Videos = (props) => {
-  console.log(props.url)
   return (
     <div className="video-con">
       <video src={props.url} controls poster={props.thumbnail}></video>
@@ -21,7 +20,7 @@ const Videos = (props) => {
             <h3>{props.title}</h3>
           </div>
           <p>
-            The Modern Show <span className="verified"></span>
+           Sidemen <span className="verified"></span>
           </p>
           <p className="views">
             1 view * <span className="days"> 1 Day ago</span>

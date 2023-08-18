@@ -1,18 +1,19 @@
 import  React from "react"
 import logo from "./youtube-logo.png"
-import { FaSearch, FaViadeoSquare } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
-import { FaMicrophoneAlt } from "react-icons/fa";
+import { FaMicrophoneAlt, FaChromecast, FaBell } from "react-icons/fa";
+
 
 
 export default function Nav() {
   
   return (
-        <nav>
-            <div className="horizontal-nav">
+    <nav>
+      <div className="horizontal-nav">
         <div className="toggle-vertical">
           <div className="open-menu">
-          <FaBars className="icons bars"/>
+            <FaBars className="icons bars" />
           </div>
           <div className="logo">
             <img src={logo} alt="" />
@@ -23,20 +24,22 @@ export default function Nav() {
             <form action="">
               <input type="text" placeholder="Search..." />
               <button className="search-button">
-              <FaSearch className="icons search-icon" />
+                <FaSearch className="icons search-icon" />
               </button>
             </form>
-          </div> 
+          </div>
           <div className="mic">
-          <FaMicrophoneAlt className="icons microphone" />
+            <FaMicrophoneAlt className="icons microphone" />
           </div>
         </div>
         <div className="account-details">
-          <FaViadeoSquare />
+          <FaChromecast className="icons chrome-cast" />
+          <FaBell className="icons bell" />
+          <FaSearch className="icons search-mobile" />
           {/* <i className="fa-regular fa-bell fa-xl" style="color: #000000"></i> */}
           <div className="account-icon">A</div>
         </div>
       </div>
-        </nav>
-    )
+    </nav>
+  );
 }
