@@ -9,6 +9,7 @@
 
 body{
   padding: 0px;
+  margin: 0;
   overflow-y: hidden;
 }
 
@@ -383,6 +384,21 @@ main{
 }
 
 @media only screen and (max-width:580px){
+  header{
+    padding-block: 0;
+    margin-block: 0;
+  }
+
+  .toggle-vertical{
+    height: 40px;
+  }
+
+  nav{
+    margin-top: 0;
+    padding-block: 0;
+    border-bottom: 1px solid black;
+  } 
+
   .side-section{
     display: none;
   }
@@ -441,6 +457,13 @@ main{
   .account-details{
     align-items: center;
     justify-content: space-evenly;
+    padding: 0;
   }
 
+  .account-icon{
+    height: 25px;
+    width: 25px;
+    font-size: 15px;
+    padding: 5px;
+  }
 }
