@@ -495,8 +495,10 @@ footer{
     display: block;
     padding: 0;
     width: auto;
-    position: absolute;
     top: 5px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .foot-home{
@@ -518,5 +520,11 @@ footer{
     line-height: 0;
     font-size: small;
     text-align: center;
+  }
+
+  footer button{
+    background-color: transparent;
+    border: none;
+    width: 30%;
   }
 }

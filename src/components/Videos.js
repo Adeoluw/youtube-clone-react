@@ -31,30 +31,18 @@ const Videos = (props) => {
       </div>
       <footer>
         <div className="footer-nav">
-          <div>
-            <p>
-              <span className='foot-home'>
-                <FaHome className="icons mobile-home" />
-              </span>
-              Home
-            </p>
-          </div>
-          <div>
-            <p>
-              <span className='foot-sub'>
-                <FaList className="icons mobile-sub" />
-              </span>
-              Subscriptions
-            </p>
-          </div>
-          <div>
-            <p>
-              <span className='foot-library'>
-                <FaLaptop className="icons mobile-library" />
-              </span>
-              Library
-            </p>
-          </div>
+          <button>
+            <FaHome className="icons mobile-home" />
+            <p>Home</p>
+          </button>
+          <button>
+            <FaList className="icons mobile-sub" />
+            <p>Subscriptions</p>
+          </button>
+          <button>
+            <FaLaptop className="icons mobile-library" />
+            <p>Library</p>
+          </button>
         </div>
       </footer>
     </div>
