@@ -485,7 +485,8 @@ footer{
   .footer-nav{
     display: flex;
     padding-top: 15px;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    width: 95%;
 
 
   }
