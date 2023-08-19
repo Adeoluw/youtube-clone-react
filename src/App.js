@@ -4,7 +4,7 @@ import React from 'react';
 import Nav from "./components/Nav";
 import Side from "./components/side"
 import Videos from './components/Videos';
-import { FaHome, FaList, FaLaptop } from 'react-icons/fa';
+// import { FaHome, FaList, FaLaptop } from 'react-icons/fa';
 
 function App() {
 
@@ -50,7 +50,7 @@ function App() {
        </div>
        <div className="videos">{allVideos}</div>
      </main>
-     <footer>
+     {/* <footer>
        <div className="footer-nav">
          <div>
            <FaHome className='icons mobile-home' />
@@ -65,7 +65,7 @@ function App() {
            <p>Library</p>
          </div>
        </div>
-     </footer>
+     </footer> */}
    </div>
  );
 }

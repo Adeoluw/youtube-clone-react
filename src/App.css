@@ -494,12 +494,29 @@ footer{
   footer .icons{
     display: block;
     padding: 0;
-    width: 180px;
+    width: auto;
+    position: absolute;
+    top: 5px;
   }
+
+  .foot-home{
+    margin-right: -7px;
+  }
+
+  .foot-sub{
+    margin-right: -20px;
+  }
+
+  .foot-library{
+    margin-right: -13px;
+  }
+
+
 
 
   footer p{
     line-height: 0;
+    font-size: small;
     text-align: center;
   }
 }
