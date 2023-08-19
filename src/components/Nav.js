@@ -6,13 +6,14 @@ import { FaMicrophoneAlt, FaChromecast, FaBell } from "react-icons/fa";
 
 
 
-export default function Nav() {
-  
+export default function Nav(props) {
+
+
   return (
     <nav>
       <div className="horizontal-nav">
         <div className="toggle-vertical">
-          <div className="open-menu">
+          <div className="open-menu" onClick={props.openclose}>
             <FaBars className="icons bars" />
           </div>
           <div className="logo">

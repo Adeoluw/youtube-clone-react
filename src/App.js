@@ -11,6 +11,14 @@ function App() {
   // let apiKey = "AIzaSyAAVAJOvPQgGMYfF4v43Z-8vdFYbihFMaI";
 // create state for the video urls
   const [getVideos, setGetVideos] = React.useState([])
+  
+  const [toggleMenu, setToggleMenu] = React.useState(2);
+
+  function handleClick() {
+    setToggleMenu(toggleMenu + 1);
+  }
+
+
 
   React.useEffect(() => {
     // Replace with your YouTube Data API key
@@ -42,12 +50,12 @@ function App() {
  return (
    <div className="App">
      <header className="App-header">
-       <Nav />
+       <Nav openclose={handleClick} />
      </header>
      <main>
-       <div className="side-section">
+       {toggleMenu % 2 === 0 ? <div className="side-section">
          <Side />
-       </div>
+       </div> : <></>}
        <div className="videos">{allVideos}</div>
      </main>
      {/* <footer>

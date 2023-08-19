@@ -28,10 +28,14 @@ nav{
 .horizontal-nav{
   display: flex;
   border: 1px solid none;
+  padding-inline: 10px;
   /* padding: 20px 0; */
 }
 
-
+.open-menu:hover{
+  background-color:rgb(225, 222, 222) ;
+  border-radius: 50%;
+}
 
 .logo{
   display: flex;
@@ -46,6 +50,7 @@ nav{
   position: relative;
   cursor: pointer;
   left: 20px;
+  mix-blend-mode: multiply;
 }
 
 .logo-img{
@@ -141,6 +146,8 @@ nav{
 
 .open-menu{
   margin-top: 10px;
+  width: 20px;
+  height: 20px;
 }
 
 .mic{
@@ -160,8 +167,14 @@ nav{
   width: 100%;
 } 
 
-.open-menu{
+.open-menu {
+  height: -moz-fit-content;
   height: fit-content;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  align-items: center;
 }
 
 /* .open-menu img{
@@ -247,7 +260,7 @@ main{
     flex-wrap: wrap;
     padding-block: 20px;
     column-gap: 15px;
-    justify-content: center;
+    justify-content: space-evenly;
     row-gap: 23px;
     overflow-y: auto;
     width: 100%;
@@ -385,6 +398,11 @@ footer{
   .video-con{
     width: 175px;
   }
+
+  .search-section{
+    width: 45%;
+    margin-left: 17px;
+  }
 }
 
 @media only screen and (max-width:580px){
@@ -430,6 +448,7 @@ footer{
 
   .logo img{
     left: 0;
+    mix-blend-mode: multiply;
   }
 
   .icons{
@@ -527,4 +546,8 @@ footer{
     border: none;
     width: 30%;
   }
+
+    .open-menu {
+     display: none;
+    }
 }
