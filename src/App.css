@@ -362,6 +362,10 @@ main{
   color: red;
 }
 
+footer{
+  display: none;
+}
+
 @media only screen and (max-width:1340px) {
  
   .video-con{
@@ -465,5 +469,36 @@ main{
     width: 25px;
     font-size: 15px;
     padding: 5px;
+  }
+
+  footer{
+    display: block;
+    height: 70px;
+    background-color: white;
+    position: absolute;
+    border-top: 1px solid black;
+    bottom: -5px;
+    z-index: 999;
+    width: 100%;
+  }
+
+  .footer-nav{
+    display: flex;
+    padding-top: 15px;
+    justify-content: space-evenly;
+
+
+  }
+
+  footer .icons{
+    display: block;
+    padding: 0;
+    width: 180px;
+  }
+
+
+  footer p{
+    line-height: 0;
+    text-align: center;
   }
 }

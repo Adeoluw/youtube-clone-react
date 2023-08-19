@@ -4,6 +4,7 @@ import React from 'react';
 import Nav from "./components/Nav";
 import Side from "./components/side"
 import Videos from './components/Videos';
+import { FaHome, FaList, FaLaptop } from 'react-icons/fa';
 
 function App() {
 
@@ -31,7 +32,7 @@ function App() {
       })
       .catch((error) => console.error("Error fetching YouTube data:", error));
   }, []);
-  // console.log(getVideos)
+  console.log("sapa")
   
 
   const allVideos = getVideos.map(item => {
@@ -47,10 +48,24 @@ function App() {
        <div className="side-section">
          <Side />
        </div>
-       <div className="videos">
-         {allVideos}
-       </div>
+       <div className="videos">{allVideos}</div>
      </main>
+     <footer>
+       <div className="footer-nav">
+         <div>
+           <FaHome className='icons mobile-home' />
+           <p>Home</p>
+         </div>
+         <div>
+           <FaList className='icons mobile-sub'/>
+           <p>Subscriptions</p>
+         </div>
+         <div>
+           <FaLaptop className='icons mobile-library'/>
+           <p>Library</p>
+         </div>
+       </div>
+     </footer>
    </div>
  );
 }
